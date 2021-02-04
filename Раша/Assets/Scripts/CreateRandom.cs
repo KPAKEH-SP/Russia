@@ -5,6 +5,8 @@ using UnityEngine;
 public class CreateRandom : MonoBehaviour
 {
     int choose;
+    public float camY;
+    public float camX;
     public bool boy;
     public bool girl;
     public GameObject cam;
@@ -16,7 +18,7 @@ public class CreateRandom : MonoBehaviour
         if (choose == 0)
         {
             boy = true;
-            cam.transform.Translate(34, 0, 0);
+            cam.transform.Translate(camX, camY, 0);
         }
 
         else if (choose == 1)
